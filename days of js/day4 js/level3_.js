@@ -1,4 +1,4 @@
-/*Write a program which tells the number of days in a month.*/
+/*Write a program which tells the number of days in a month.
 
 let theMonth = prompt('Enter Month');
 switch (theMonth){
@@ -26,7 +26,7 @@ switch (theMonth){
         console.log('Not a month');
 }
 
-//2. Write a program which tells the number of days in a month, now consider leap year.
+2. Write a program which tells the number of days in a month, now consider leap year.
 let Year = new Date().getFullYear();
 
 switch (theMonth){
@@ -56,7 +56,7 @@ switch (theMonth){
 
     default:
         console.log('Not a month');
-}
+}*/
 
 
 
