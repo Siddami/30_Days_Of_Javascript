@@ -67,7 +67,7 @@ console.log(newCat.getBasicInfo())
 
 
 //level 3
-/*Let's try to develop a program which calculate measure of central tendency of a sample(mean, median, mode) and measure of variability(range, variance, standard deviation).
+/*1. Let's try to develop a program which calculate measure of central tendency of a sample(mean, median, mode) and measure of variability(range, variance, standard deviation).
 In addition to those measures find the min, max, count, percentile, and frequency distribution of the sample.
 You can create a class called Statistics and create all the functions which do statistical calculations as method for the Statistics class.
 Check the output below.
@@ -203,3 +203,68 @@ console.log(statistics.variance)
 console.log(statistics.standardDeviation)
 console.log(statistics.percentile)
 console.log(statistics.freqDist)
+
+
+/*Create a class called PersonAccount.
+It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods.
+Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
+*/
+
+class PersonAccount {
+  constructor(firstname,lastname,incomes,expenses){
+   this.firstname = firstname;
+   this.lastname = lastname;
+   this.incomes = incomes;
+   this.expenses = expenses;
+  }
+
+  totalIncome (){
+   let totalIncome = 0;
+   for(let i = 0; i < this.incomes.length; i++){
+    totalIncome += this.incomes[i];
+   }
+   return totalIncome;
+  }
+
+  totalExpense (){
+    let totalExpense = 0;
+    for(let i = 0; i < this.expenses.length; i++){
+      totalExpense += this.expenses[i];
+    }
+    return totalExpense;
+  }
+
+  accountInfo(){
+    let incomesList = this.incomes.slice(0, -1).join(',');
+    let expenseList = this.expenses.slice(0,-1).join(',');
+
+    let totalInfo = `Name:${this.firstname} ${this.lastname}
+    Incomes:${incomesList}
+    Expenses:${expenseList}
+    totalIncome:${this.totalIncome()}
+    totalExpense:${this.totalExpense()}
+    totalMoneyLeft:${this.totalIncome()-this.totalExpense()}`
+    return totalInfo
+  }
+
+  set addIncome(income){
+       this.incomes.push(income)
+  }
+
+  set addExpense(expense){
+    this.expenses.push(expense)
+  }
+
+  get accountBalance(){
+    let balance = this.totalIncome() - this.totalExpense()
+    return balance;
+  }
+}
+
+const account = new PersonAccount('Yetunde', 'Abdulkareem', [2300, 5000, 2500], [1000, 200, 200]);
+account.addIncome = 3000;
+account.addExpense = 2000;
+console.log(account.incomes);
+console.log(account.expenses);
+console.log(account.accountInfo());
+console.log(account.accountBalance)
