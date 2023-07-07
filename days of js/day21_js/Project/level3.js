@@ -86,7 +86,7 @@ allLiElements.forEach((list, i) =>{
   list.style.margin = '10px auto'
   list.style.padding = '10px'
   list.style.textAlign = 'left'
-  list.style.width = '50%'
+  list.style.width = '60%'
   if(list.textContent.includes('Done')){
     list.style.backgroundColor = 'green'
   }else if(list.textContent.includes('Ongoing')){
