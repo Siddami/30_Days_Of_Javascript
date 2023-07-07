@@ -54,10 +54,8 @@ for(let i = 0; i <= 101; i++){
 //style div
 container.style.display = 'flex'
 container.style.flexWrap = 'wrap'
-container.style.maxWidth = '1200px'
-container.style.margin = '10px auto'
+container.style.width = '80%'
+container.style.margin = '8px auto'
 container.style.padding = '10px'
-container.style.height = '80%'
-container.style.justifyContent = 'center'
+container.style.justifyContent = 'space-evenly'
 container.style.alignItems = 'center'
-container.style.height = '100vh'
