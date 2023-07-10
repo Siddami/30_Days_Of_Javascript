@@ -107,6 +107,7 @@ function append(){
 //create numbers between 0 to added number using a loop then append
 button.addEventListener('click', append)
 input.addEventListener('change', ()=>{
+    event.preventDefault()
     numWrapper.innerHTML = ''
     label.textContent = ''
 })
