@@ -27,9 +27,7 @@ info.style.fontWeight = 'bolder'
 info.style.padding = '20px'
 
 //keyboard event function
-document.body.addEventListener('load', e =>{
-    e.preventDefault();
-
+window.addEventListener('load', e =>{
     document.body.contentEditable = true;
     document.body.focus();
 })
