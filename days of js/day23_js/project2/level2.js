@@ -27,8 +27,9 @@ info.style.fontWeight = 'bolder'
 info.style.padding = '20px'
 
 //keyboard event function
-window.addEventListener('load', e =>{
-    document.body.contentEditable = true;
+window.addEventListener('load', () =>{
+
+
     document.body.focus();
 })
 document.body.addEventListener('keydown', e => {
