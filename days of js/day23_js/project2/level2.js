@@ -27,9 +27,10 @@ info.style.fontWeight = 'bolder'
 info.style.padding = '20px'
 
 //keyboard event function
-
 document.body.addEventListener('touchstart', e =>{
     e.preventDefault();
+
+    e.focus();
 })
 document.body.addEventListener('keydown', e => {
     info.innerHTML = `You Pressed <span>${e.key}</span>`
