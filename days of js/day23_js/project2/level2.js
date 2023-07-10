@@ -22,12 +22,15 @@ info.style.alignItems = 'center'
 info.style.borderRadius = '5px'
 info.style.border = '1px solid grey'
 info.style.boxShadow = '2px  2px grey'
-info.style.fontSize = '2.5rem'
+info.style.fontSize = '2rem'
 info.style.fontWeight = 'bolder'
 info.style.padding = '20px'
 
 //keyboard event function
 
+document.body.addEventListener('touchstart', e =>{
+    e.preventDefault();
+})
 document.body.addEventListener('keydown', e => {
     console.log(e)
     e.preventDefault();
@@ -35,7 +38,7 @@ document.body.addEventListener('keydown', e => {
     const span = document.querySelector('span')
     span.style.margin = '8px'
     span.style.color = 'green'
-    span.style.fontSize = '2.5rem'
+    span.style.fontSize = '2rem'
     ascii.textContent = e.keyCode
 
     //style ascii button
