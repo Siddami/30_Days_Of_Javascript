@@ -56,7 +56,7 @@ function isPrime(num){
 numWrapper.style.display = 'flex'
 numWrapper.style.flexWrap = 'wrap'
 numWrapper.style.width = '80%'
-numWrapper.style.margin = '10px auto'
+numWrapper.style.margin = '8px auto'
 numWrapper.style.padding = '15px'
 numWrapper.style.justifyContent = 'flex-start'
 numWrapper.style.alignItems = 'center'
@@ -81,11 +81,11 @@ function append(){
     }
     for(let i = 0; i <= inputValue; i++){
         const span = document.createElement('span');
-        span.style.fontSize = '30px'
+        span.style.fontSize = '2rem'
         span.style.color = 'white'
         span.style.display = 'block'
         span.style.textAlign = 'center'
-        span.style.width = '13%'
+        span.style.width = '10%'
         span.style.margin = '5px'
         span.style.padding = '10px'
         span.style.fontWeight = 'bolder'
