@@ -28,7 +28,8 @@ info.style.padding = '20px'
 
 //keyboard event function
 
-document.body.addEventListener('keypress', e => {
+document.body.addEventListener('keydown', e => {
+    console.log(e)
     info.innerHTML = `You Pressed <span>${e.key}</span>`
     const span = document.querySelector('span')
     span.style.margin = '8px'
