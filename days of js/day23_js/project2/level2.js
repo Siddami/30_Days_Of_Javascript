@@ -22,19 +22,23 @@ info.style.alignItems = 'center'
 info.style.borderRadius = '5px'
 info.style.border = '1px solid grey'
 info.style.boxShadow = '2px  2px grey'
-info.style.fontSize = '3rem'
+info.style.fontSize = '2.5rem'
 info.style.fontWeight = 'bolder'
 info.style.padding = '20px'
 
 //keyboard event function
 
+document.body.addEventListener('touchstart', e =>{
+    e.preventDefault();
+})
 document.body.addEventListener('keydown', e => {
     console.log(e)
+    e.preventDefault();
     info.innerHTML = `You Pressed <span>${e.key}</span>`
     const span = document.querySelector('span')
     span.style.margin = '8px'
     span.style.color = 'green'
-    span.style.fontSize = '3rem'
+    span.style.fontSize = '2.5rem'
     ascii.textContent = e.keyCode
 
     //style ascii button
@@ -47,7 +51,7 @@ document.body.addEventListener('keydown', e => {
     ascii.style.border = '1px solid grey'
     ascii.style.borderRadius = '5px'
     ascii.style.boxShadow = '2px 2px grey'
-    ascii.style.fontSize = '5rem'
+    ascii.style.fontSize = '4rem'
     ascii.style.fontWeight = 'bolder'
     ascii.style.color = 'green'
 })
