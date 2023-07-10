@@ -28,9 +28,6 @@ info.style.padding = '20px'
 
 //keyboard event function
 
-document.body.addEventListener('touchstart', e =>{
-    e.preventDefault();
-})
 document.body.addEventListener('keydown', e => {
     console.log(e)
     e.preventDefault();
