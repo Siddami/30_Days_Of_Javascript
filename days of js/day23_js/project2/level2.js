@@ -33,7 +33,6 @@ document.body.addEventListener('touchstart', e =>{
 })
 document.body.addEventListener('keydown', e => {
     console.log(e)
-    e.preventDefault();
     info.innerHTML = `You Pressed <span>${e.key}</span>`
     const span = document.querySelector('span')
     span.style.margin = '8px'
