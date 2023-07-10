@@ -27,7 +27,7 @@ info.style.fontWeight = 'bolder'
 info.style.padding = '20px'
 
 //keyboard event function
-document.body.addEventListener('touchstart', e =>{
+info.addEventListener('touchstart', e =>{
     e.preventDefault();
 
     e.focus();
