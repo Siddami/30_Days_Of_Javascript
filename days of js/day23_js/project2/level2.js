@@ -31,7 +31,7 @@ document.body.addEventListener('touchstart', e =>{
     e.preventDefault();
 
     document.body.contentEditable = true;
-    e.focus();
+    document.body.focus();
 })
 document.body.addEventListener('keydown', e => {
     info.innerHTML = `You Pressed <span>${e.key}</span>`
