@@ -27,7 +27,7 @@ info.style.fontWeight = 'bolder'
 info.style.padding = '20px'
 
 //keyboard event function
-document.body.addEventListener('touchstart', e =>{
+document.body.addEventListener('load', e =>{
     e.preventDefault();
 
     document.body.contentEditable = true;
