@@ -48,19 +48,20 @@ function getPopulation(){
    //world data
    const container = document.createElement('div')
    container.style.display = 'flex'
-   container.style.justifyContent = 'space-between'
+   container.style.justifyContent = 'space-evenly'
    container.style.alignItems = 'center'
 
    const worldName = document.createElement('span')
+   worldName.style.display = 'block'
    worldName.textContent= 'World'
-   worldName.style.padding = '5px'
-   worldName.style.margin = '5px'
-   worldName.style.width = '8%'
+   worldName.style.padding = '15px'
+   worldName.style.margin = '10px'
+   worldName.style.width = '20%'
 
    const boxContainer = document.createElement('div')
-   boxContainer.style.width = '450px'
-   boxContainer.style.padding = '5px'
-   boxContainer.style.margin = '5px'
+   boxContainer.style.width = '60%'
+   boxContainer.style.padding = '15px'
+   boxContainer.style.margin = '10px'
 
    const actualBox = document.createElement('span')
    boxContainer.appendChild(actualBox)
@@ -70,10 +71,11 @@ function getPopulation(){
    actualBox.style.width = `${maxPercentage}%`
 
    const worldPop = document.createElement('span')
+   worldPop.style.display = 'block'
    worldPop.textContent = grandTotal;
-   worldPop.style.padding = '5px'
-   worldPop.style.margin = '5px'
-   worldPop.style.width = '8%'
+   worldPop.style.padding = '15px'
+   worldPop.style.margin = '10px'
+   worldPop.style.width = '20%'
 
    container.appendChild(worldName)
    container.appendChild(boxContainer)
@@ -86,19 +88,20 @@ result.forEach(data => {
 
  const container = document.createElement('div')
  container.style.display = 'flex'
- container.style.justifyContent = 'space-between'
+ container.style.justifyContent = 'space-evenly'
  container.style.alignItems = 'center'
 
  const name = document.createElement('span')
  name.textContent= data.country
- name.style.padding = '5px'
- name.style.margin = '5px'
- name.style.width = '8%'
+ name.style.display = 'block'
+ name.style.padding = '15px'
+ name.style.margin = '10px'
+ name.style.width = '20%'
 
  const boxContainer = document.createElement('div')
- boxContainer.style.width = '450px'
- boxContainer.style.padding = '5px'
- boxContainer.style.margin = '5px'
+ boxContainer.style.width = '60%'
+ boxContainer.style.padding = '15px'
+ boxContainer.style.margin = '10px'
 
  const actualBox = document.createElement('span')
  boxContainer.appendChild(actualBox)
@@ -109,9 +112,10 @@ result.forEach(data => {
 
  const pop = document.createElement('span')
  pop.textContent = data.population.toLocaleString();
- pop.style.padding = '5px'
- pop.style.margin = '5px'
- pop.style.width = '8%'
+ pop.style.display = 'block'
+ pop.style.padding = '15px'
+ pop.style.margin = '10px'
+ pop.style.width = '20%'
 
     container.appendChild(name)
     container.appendChild(boxContainer)
@@ -147,7 +151,6 @@ frequency: languageFrequency[language]
 //calculate least spoken language
 const maxLang = Math.max(...mostSpokenLanguages.map(lang => lang.frequency))
 const minLang = Math.min(...mostSpokenLanguages.map(lang => lang.frequency))
-console.log(maxLang, minLang)
 
 function getLanguages(){
 //graph title
@@ -160,19 +163,19 @@ mostSpokenLanguages.forEach(data => {
 
  const container = document.createElement('div')
  container.style.display = 'flex'
- container.style.justifyContent = 'space-between'
+ container.style.justifyContent = 'space-evenly'
  container.style.alignItems = 'center'
 
  const name = document.createElement('span')
  name.textContent= data.language
- name.style.padding = '5px'
- name.style.margin = '5px'
- name.style.width = '8%'
+ name.style.padding = '15px'
+ name.style.margin = '10px'
+ name.style.width = '20%'
 
  const boxContainer = document.createElement('div')
- boxContainer.style.width = '450px'
- boxContainer.style.padding = '5px'
- boxContainer.style.margin = '5px'
+ boxContainer.style.width = '60%'
+ boxContainer.style.padding = '15px'
+ boxContainer.style.margin = '10px'
 
  const actualBox = document.createElement('span')
  boxContainer.appendChild(actualBox)
@@ -183,9 +186,9 @@ mostSpokenLanguages.forEach(data => {
 
  const pop = document.createElement('span')
  pop.textContent = data.frequency;
- pop.style.padding = '5px'
- pop.style.margin = '5px'
- pop.style.width = '8%'
+ pop.style.padding = '15px'
+ pop.style.margin = '10px'
+ pop.style.width = '20%'
 
     container.appendChild(name)
     container.appendChild(boxContainer)

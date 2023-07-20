@@ -57,11 +57,12 @@ button{
 }
 
 .graph-wrapper{
-    margin: 10px auto;
+    margin: 8px auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-around;
+    align-items: space-evenly;
     padding: 15px;
-    max-width: 800px;
+    max-width: 80%;
 }
