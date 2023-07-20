@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+padding: 4rem;
+background: linear-gradient(45deg, rgba(137, 141, 117, 0.6), rgba(137, 137, 204, 0.7)), url(./images/globe-2.jpg);
+width: 100%;
+height: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.button-container{
+    width: auto;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+button{
+    background-color: #d55ef2;
+    padding: 10px;
+}
