@@ -50,6 +50,12 @@ button{
     max-width: 100%;
 }
 
+.graph-title{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
 .graph-wrapper{
     margin: 10px auto;
     display: flex;
