@@ -19,23 +19,24 @@ const sorted = countries.sort((a,b) => a - b);
 
 //all countries appended on sort click
 allSorted.addEventListener('click', () => {
-    allSorted.style.backgroundColor = '#45308a'
-    allSorted.style.borderColor = '#45308a'
+    allSorted.style.backgroundColor = '#4337bf'
+    allSorted.style.borderColor = '#4337bf'
     sorted.forEach(country =>{
         const span = document.createElement('span')
         span.textContent = country.toUpperCase()
-        span.style.fontSize = '1.2rem'
+        span.style.fontSize = '1rem'
         span.style.fontWeight = 'bold'
         span.style.background = 'linear-gradient(45deg, rgba(35, 60, 130, 0.6), rgba(137, 137, 204, 0.7)), url(./images/map_image.jpg)'
         span.style.backgroundSize = 'contain'
         span.style.color = 'white'
         span.style.display = 'flex'
+        span.style.flexWrap = 'wrap'
         span.style.justifyContent = 'center'
         span.style.alignItems = 'center'
-        span.style.width = '12%'
+        span.style.width = '15%'
         span.style.margin = '0.8rem'
-        span.style.padding = '2rem'
-        span.style.height = '18vh'
+        span.style.padding = '3rem'
+        span.style.height = '20vh'
         span.style.flexShrink = '1'
         span.style.boxShadow = '2px 2px 2px grey'
         span.style.borderRadius = '5px'
@@ -52,12 +53,10 @@ allSorted.addEventListener('blur', () => {
 //starts with function
 let inputv;
 startWith.addEventListener('click', () => {
-    startWith.style.backgroundColor = '#45308a'
-    startWith.style.borderColor = '#45308a'
+    startWith.style.backgroundColor = '#4337bf'
+    startWith.style.borderColor = '#4337bf'
     inputV = input.value.trim();
     let count = 0;
-    const iSpan = document.createElement('span')
-    const cSpan = document.createElement('span')
 
     sorted.forEach(country => {
         if(country.startsWith(inputV.toUpperCase())){
@@ -65,18 +64,19 @@ startWith.addEventListener('click', () => {
 
             const span = document.createElement('span')
             span.textContent = country.toUpperCase();
-            span.style.fontSize = '1.08rem'
+            span.style.fontSize = '1rem'
             span.style.fontWeight = 'bold'
             span.style.background = 'linear-gradient(45deg, rgba(35, 60, 130, 0.6), rgba(137, 137, 204, 0.7)), url(./images/map_image.jpg)'
             span.style.backgroundSize = 'contain'
             span.style.color = 'white'
             span.style.display = 'flex'
+            span.style.flexWrap = 'wrap'
             span.style.justifyContent = 'center'
             span.style.alignItems = 'center'
-            span.style.width = '12%'
+            span.style.width = '15%'
             span.style.margin = '0.8rem'
-            span.style.padding = '2rem'
-            span.style.height = '18vh'
+            span.style.padding = '3rem'
+            span.style.height = '20vh'
             span.style.flexShrink = '1'
             span.style.boxShadow = '2px 2px 2px grey'
             span.style.borderRadius = '5px'
@@ -84,10 +84,68 @@ startWith.addEventListener('click', () => {
             countriesContainer.appendChild(span)
         }
     })
-    p.textContent = `Number of countries that starts with ${input.value.trim()}: ${count}`
+    p.innerHTML = `Countries starting with <span class="i">${input.value.trim()}</span> are <span class="c">${count}</span>`
+    const i = document.querySelector('.i')
+    i.style.color = 'red'
+    i.style.textStyle = 'italic'
+    const c = document.querySelector('.c')
+    c.style.color = '#3bd94a'
 })
 startWith.addEventListener('blur', () => {
     startWith.style.backgroundColor = ''
     startWith.style.borderColor = ''
     countriesContainer.innerHTML = ''
+    p.innerHTML = ''
+})
+
+//search with any
+anyWord.addEventListener('click', () => {
+    anyWord.style.backgroundColor = '##4337bf'
+    anyWord.style.borderColor = '##4337bf'
+    inputV = input.value.trim();
+    let count = 0;
+    console.log(input.value)
+    sorted.forEach(country => {
+        // if(input.value === ''){
+        //     p.innerHTML = 'No input, please select input a letter'
+        //     countriesContainer.innerHTML = ''
+        // return;
+        // }
+        if(country.includes(inputV.toUpperCase())){
+            count++;
+
+            const span = document.createElement('span')
+            span.textContent = country.toUpperCase();
+            span.style.fontSize = '1rem'
+            span.style.fontWeight = 'bold'
+            span.style.background = 'linear-gradient(45deg, rgba(35, 60, 130, 0.6), rgba(137, 137, 204, 0.7)), url(./images/map_image.jpg)'
+            span.style.backgroundSize = 'contain'
+            span.style.color = 'white'
+            span.style.display = 'flex'
+            span.style.flexWrap = 'wrap'
+            span.style.justifyContent = 'center'
+            span.style.alignItems = 'center'
+            span.style.width = '15%'
+            span.style.margin = '0.8rem'
+            span.style.padding = '3rem'
+            span.style.height = '20vh'
+            span.style.flexShrink = '1'
+            span.style.boxShadow = '2px 2px 2px grey'
+            span.style.borderRadius = '5px'
+
+            countriesContainer.appendChild(span)
+        }
+    })
+    p.innerHTML = `Countries that include <span class="i">${input.value.trim()}</span> are <span class="c">${count}</span>`
+    const i = document.querySelector('.i')
+    i.style.color = 'red'
+    i.style.textStyle = 'italic'
+    const c = document.querySelector('.c')
+    c.style.color = '#3bd94a'
+})
+anyWord.addEventListener('blur', () => {
+    anyWord.style.backgroundColor = ''
+    anyWord.style.borderColor = ''
+    countriesContainer.innerHTML = ''
+    p.innerHTML = ''
 })

@@ -6,7 +6,7 @@
 
 .container{
 padding: 5rem;
-background: linear-gradient(45deg, rgba(137, 141, 117, 0.6), rgba(137, 137, 204, 0.7)), url(./images/globe-2.jpg);
+background: linear-gradient(45deg, rgba(16, 49, 92, 0.6), rgba(35, 90, 209, 0.7)), url(./images/globe-2.jpg);
 width: 100%;
 height: 90vh;
 background-repeat: no-repeat;
@@ -24,7 +24,9 @@ h1{
 p{
     color: white;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    margin: 2px;
+    padding: 2px;
 }
 
 h4{
@@ -41,9 +43,9 @@ h4{
 
 button{
     cursor: pointer;
-    border-radius: 5px;
-    border-color: #997fee;
-    background-color: #997fee;
+    border-radius: 2px;
+    border-color: #958df5;
+    background-color: #958df5;
     padding: 10px;
     margin: 0px auto;
     color: white;
