@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    font-size: 1.2rem;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: left;
+    margin: 8px;
+}
+
+.description{
+    background-color: rgb(194, 145, 131);
+    padding: 25px;
+    margin-bottom: 10px;
+}
+.icons{
+    padding: 8px;
+}
+.myDescription {
+    position: relative; /* Required for animation to work */
+    animation: moveRight 1s ease-out infinite; /* 5s duration, ease-out timing function, and infinite loop */
+  }
+
+  @keyframes moveRight {
+    from {
+      left: -2%; /* Start from the leftmost position */
+    }
+    to {
+      left: 5%; /* Move to the rightmost position (100% of the container's width) */
+    }
+  }
+
+.intro{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.courses{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 8px;
+   margin-top: 8px;
+}
+
+.c{
+    padding: 10px;
+    margin: 5px;
+    border: 0.2px solid #e7e4e4;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+c:hover{
+    background-color: rgb(194, 145, 131);
+}
+
+.learning{
+    margin-top: 8px;
+    padding: 10px;
+}
