@@ -5,10 +5,10 @@
 }
 
 .container{
+    padding: 8px;
     margin: 0 auto;
     width: 80%;
     text-align: center;
-    font-size: 1.5rem;
 }
 
 .inputs{
@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
+    width: 100%;
 }
 
 .inpt{
@@ -32,4 +33,53 @@
    background-color: rgb(236, 164, 164);
    border-color:rgb(236, 164, 164) ;
    color: #fff;
+}
+
+.playerBoard{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(236, 164, 164);
+    margin: 5px auto;
+    width: 75%;
+    padding: 5px;
+    text-align: left;
+}
+
+.player{
+    width: 20%;
+    padding: 5px;
+}
+
+.date{
+    font-size: 11px;
+    color: grey;
+}
+
+.country, .score{
+   display: block;
+   width: 20%;
+}
+
+.circles{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+
+#del{
+    color: red;
+    font-weight: bold;
+}
+
+.c{
+    display: block;
+    border-radius: 50%;
+    border-width: 0;
+    width: 40%;
+    height: 7vh;
+    margin: 2px;
+    background-color: #fff;
 }
