@@ -91,3 +91,32 @@
     margin: 2px;
     background-color: #fff;
 }
+
+
+@media (min-width: 390px) and (max-width: 560px) {
+    .inputs{
+        display: block;
+    }
+
+    .inpt{
+        display: block;
+        width: 60%;
+        margin: 2px auto;
+    }
+
+    .country, .score{
+        text-align: center;
+        margin: 2px auto;
+        width: 50%;
+    }
+    .playerBoard{
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+    }
+    .circles{
+        justify-content: space-around;
+        width: 50%;
+        margin: 2px auto;
+    }
+}
