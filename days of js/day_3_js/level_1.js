@@ -1,8 +1,12 @@
-/*1.Declare firstName, lastName, country, city, age, isMarried, year variable and 
+/*1.Declare firstName, lastName, country, city, age, isMarried, year variable and
 assign value to it and use the typeof operator to check different data types.*/
 
 let firstName = 'Yetunde' ,lastName = 'Abdulkareem', country = 'Nigeria', age = 24, isMarried = true;
-console.log(typeof(firstName), typeof(lastName), typeof(country), typeof(age), typeof(isMarried));
+console.log(typeof(firstName),
+            typeof(lastName),
+            typeof(country),
+            typeof(age),
+            typeof(isMarried));
 
 //2. Check if type of '10' is equal to 10
 
@@ -17,9 +21,11 @@ console.log(rounding === 10);
 /*4. Boolean value is either true or false.
 Write three JavaScript statement which provide truthy value.
 Write three JavaScript statement which provide falsy value.*/
+let false1 = '' == 1, false2 = 0 > 1 , false3 = false
+let truth1 = true, truth2 = 2 < 5, truth3 = 5 == 5
 
-console.log(typeof('',0,false,true,2 < 5))
-
+console.log(false1, false2, false3)
+console.log(truth1, truth2, truth3)
 /*5.Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
 4 > 3
 4 >= 3
@@ -32,7 +38,7 @@ console.log(typeof('',0,false,true,2 < 5))
 4 != '4'
 4 == '4'
 4 === '4'
-Find the length of python and jargon and make a falsy comparison statement.*/ 
+Find the length of python and jargon and make a falsy comparison statement.*/
 
 let truthy1 = 4 > 3, truthy2 = 4 == 4, truthy3 = 4 === 4, truthy4 = 4 !== '4', truthy5 = 4 == '4';
 let falsy1 = 4 < 3, falsy2 = 4 <= 3, falsy3 = 4 != 4, falsy4 = 4 !== 4, falsy5 = 4 === '4', falsy6 = 4 != '4';
@@ -97,20 +103,3 @@ console.log(minutesNow);
 //seconds elapsed
 let secondsElapsed = Date.now();
 console.log(secondsElapsed);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
