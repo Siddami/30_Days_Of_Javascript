@@ -48,14 +48,14 @@ switch(Month){
     case 'August':
         console.log('the season is Summer');
         break;
-    
+
     default:
         console.log('there is no such month');
 
-    
+
 }
 
-/*3. Check if a day is weekend day or a working day. Your script will take day as an input.
+/*3. Check if a day is weekend day or a working day. Your script will take day as an input.*/
 let day = prompt('What is the day today?');
 switch (day){
     case 'Monday':
@@ -72,18 +72,4 @@ switch (day){
 
     default:
         console.log('Not a valid day');
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

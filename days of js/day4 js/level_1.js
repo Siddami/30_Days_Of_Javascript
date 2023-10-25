@@ -1,15 +1,15 @@
-/*1. Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive' 
-but if not 18 give another feedback stating to wait for the number of years he needs to turn 18.
+/*1. Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive'
+but if not 18 give another feedback stating to wait for the number of years he needs to turn 18.*/
 let agePrompt = parseInt(prompt('Enter your age'));
 if (agePrompt >= 18){
     console.log('You are old enough to drive');
 }else{
     console.log(`wait for ${18 - agePrompt} years`);
-}*/
+}
 
-/*2. Compare the values of myAge and yourAge using if … else. 
-Based on the comparison and log the result to console stating who is older (me or you). 
-Use prompt(“Enter your age:”) to get the age as input.
+/*2. Compare the values of myAge and yourAge using if … else.
+Based on the comparison and log the result to console stating who is older (me or you).
+Use prompt(“Enter your age:”) to get the age as input.*/
 let yAge = parseInt(prompt('Enter your age'));
 let mAge = parseInt(prompt('Enter your age'));
 if(mAge > yAge){
@@ -20,7 +20,7 @@ else if(mAge === yAge){
 }
 else{
     console.log(`You are ${yAge - mAge} years older than me`)
-}*/
+}
 
 
 /*3. If a is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in to ways
@@ -53,15 +53,3 @@ if(num % 2 === 0){
 }else{
     console.log(`${num} is an odd number`);
 }
-
-
-
-
-
-
-
-
-
-
-
-

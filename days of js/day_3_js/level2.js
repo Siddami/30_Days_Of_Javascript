@@ -1,35 +1,35 @@
 //1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
-/*let b = parseInt(prompt('Enter Base')
+let b = parseInt(prompt('Enter Base'));
 let h = parseInt(prompt('Enter Height'));
 
 let area = 0.5 * b * h;
-console.log(area);*/
+console.log(area);
 
 //2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
-/*let sideA = parseInt(prompt('Enter side A'));
+let sideA = parseInt(prompt('Enter side A'));
 let sideB = parseInt(prompt('Enter side B'));
 let sideC = parseInt(prompt('Enter side C'));
 
 let perimeter = (sideA + sideB + sideC);
-console.log(perimeter);*/
+console.log(perimeter);
 
-/*3. Get length and width using prompt and 
-calculate an area of rectangle 
+/*3. Get length and width using prompt and
+calculate an area of rectangle
 (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))*/
 
-/*let length = parseInt(prompt('Enter Length'));
+let length = parseInt(prompt('Enter Length'));
 let width = parseInt(prompt('Enter Width'));
 
-let area = length * width;
-let perimeter = 2 * (length + width);
-console.log(area, perimeter);
+let a = length * width;
+let p = 2 * (length + width);
+console.log(a, p);
 
 //4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
 let r = parseInt(prompt('Enter radius'));
 const pi = 3.14;
-let area = pi * r * r;
+let ar = pi * r * r;
 let c = 2 * pi * r;
-console.log(area, c);*/
+console.log(ar, c);
 
 //5. Calculate the slope, x-intercept and y-intercept of y = 2x -2.
 
@@ -59,11 +59,11 @@ let x = -2.1;
 let y = (x**2 + 6*x + 9);
 console.log(Math.floor(y));
 
-/*9. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
+/*9. Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?*/
 let hours = parseInt(prompt('Enter hours'));
 let rPerH = parseInt(prompt('Enter rate per hour'));
 let rate = hours * rPerH;
-console.log(rate);*/
+console.log(rate);
 
 //10. If the length of your name is greater than 7 say, your name is long else say your name is short.
 let myName = 'Siddiqat';
@@ -90,13 +90,13 @@ else{
 let MyAge = 50;
 let YourAge = 70;
 if(MyAge > YourAge){
-    console.log(`I am ${MyAge - YourAge} years older than your`);    
+    console.log(`I am ${MyAge - YourAge} years older than your`);
 }
 else{
     console.log(`you are ${YourAge - MyAge} years older than me,and i am younger than you`)
 }
 
-/*13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+/*13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.*/
 let birthYear = parseInt(prompt('Enter your birth year'));
 let Now = new Date()
 let currentYear = Now.getFullYear();
@@ -106,20 +106,20 @@ if(ageNow >= 18){
     console.log('You are fit to drive');
 }else{
     console.log('You are not at a driving age');
-}*/
+}
 
-/*14. Write a script that prompt the user to enter number of years. 
-Calculate the number of seconds a person can live. 
-Assume some one lives just hundred years
+/*14. Write a script that prompt the user to enter number of years.
+Calculate the number of seconds a person can live.
+Assume some one lives just hundred years*/
 let numY = parseInt(prompt('Enter the number of years you have lived'));
 let nowY = new Date();
 let secLived = nowY.getTime(numY);
-console.log(`You have lived ${secLived} seconds.`)*/
+console.log(`You have lived ${secLived} seconds.`)
 
 /*15. Create a human readable time format using the Date time object
 YYYY-MM-DD HH:mm
 DD-MM-YYYY HH:mm
-DD/MM/YYYY HH:mm*/ 
+DD/MM/YYYY HH:mm*/
 let theDate = new Date()
 let theMonth = theDate.getMonth();
 let theHour = theDate.getHours();
@@ -128,8 +128,3 @@ let theDay = theDate.getDay();
 console.log(`${theYear}-${theMonth}-${theDay}`);
 console.log(`${theDay}-${theMonth}-${theYear}`);
 console.log(`${theDay}/${theMonth}/${theYear}`);
-
-
-
-
-
