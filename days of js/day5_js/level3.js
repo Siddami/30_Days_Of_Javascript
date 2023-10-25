@@ -15,7 +15,7 @@ console.log(avg)
 
 //Find the range of the ages(max minus min)
 let range = maxAge - minAge;
-console.log(range); 
+console.log(range);
 
 //Compare the value of (min - average) and (max - average), use abs() method 1.
 //Slice the first ten countries from the countries array;
@@ -23,12 +23,3 @@ let comp1 = Math.abs(minAge - avg);
 let comp2 = Math.abs(maxAge - avg);
 console.log(comp1)
 console.log(comp2)
-
-
-
-
-
-
-
-
-

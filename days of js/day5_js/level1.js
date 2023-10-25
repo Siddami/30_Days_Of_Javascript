@@ -13,14 +13,14 @@ let midItem = moreElementArr[3];
 let lastItem = moreElementArr[7 -1];
 console.log(firstItem, midItem, lastItem);
 
-//5. Declare an array called mixedDataTypes, 
-//put different data types in the array and find the length of the array. 
+//5. Declare an array called mixedDataTypes,
+//put different data types in the array and find the length of the array.
 //The array size should be greater than 5
 const mixedDataTypes = [2, 'string', true, {name: 'joy', age : 24}, 20, ['beeds', 2]];
 lengthOfArr = mixedDataTypes.length;
 console.log(lengthOfArr);
 
-//6. Declare an array variable name itCompanies and assign initial values 
+//6. Declare an array variable name itCompanies and assign initial values
 //Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 let itCompanies = ['Facebook','Google', 'Microsoft', 'Apple', 'IBM', 'Oracle' , 'Amazon'];
 
@@ -40,7 +40,7 @@ console.log(firstCom, midCom, lastCom);
 //10. Print out each company
 for(let i = 0; i < itCompanies.length; i++){
     console.log(itCompanies[i]);
-} 
+}
 
 //11. Change each company name to uppercase one by one and print them out
 for(let i = 0; i < itCompanies.length; i++){
@@ -53,7 +53,7 @@ itCompanies.pop();
 console.log(`${itCompanies} and Amazon are big IT companies.`);
 itCompanies.push('Amazon');
 
-//13. Check if a certain company exists in the itCompanies array. 
+//13. Check if a certain company exists in the itCompanies array.
 //If it exist return the company else return a company is not found
 if(itCompanies.includes('Apple')){
     let arrIndex = itCompanies.indexOf('Apple')
@@ -103,84 +103,3 @@ console.log(itCompanies.pop());
 
 //23. Remove all IT companies
 console.log(itCompanies.splice())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
